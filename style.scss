@@ -1,0 +1,106 @@
+.popup-div {
+  z-index: 999;
+  left: 0;
+  top: 0;
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &, * {
+    box-sizing: border-box;
+  }
+
+  &.visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+
+    .popup-content {
+      -webkit-animation: zoomIn 0.5s;
+      animation: zoomIn 0.5s;
+    }
+  }
+
+  .popup-content {
+    max-width: 95%;
+    min-width: 200px;
+    max-height: 95vh;
+    overflow: auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 3px;
+    position: relative;
+
+    .fa.fa-times-circle {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+  }
+
+  .popup-title {
+    text-align: center;
+    margin: 0;
+  }
+
+  .flex-box {
+    display: flex;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .justify-content-around {
+    justify-content: space-around;
+  }
+
+  .btn {
+    background: #222;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin: 0;
+
+    &.btn-success {
+      background: #28a745;
+    }
+    &.btn-danger {
+      background: #dc3545;
+    }
+    &.btn-warning {
+      background: #ffc107;
+      color: #222;
+    }
+    &.btn-info {
+      background: #17a2b8;
+    }
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}

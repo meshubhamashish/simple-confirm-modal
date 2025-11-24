@@ -1,6 +1,6 @@
 {
   "name": "simple-confirm-modal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple, lightweight confirmation modal library with no dependencies.",
   "main": "index.js",
   "style": "style.css",

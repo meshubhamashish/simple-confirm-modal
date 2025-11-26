@@ -169,7 +169,7 @@ The library supports four modal types with different visual styles:
 
 - 📦 [NPM Package](https://www.npmjs.com/package/simple-confirm-modal)
 - 🔗 [GitHub Repository](https://github.com/meshubhamashish/simple-confirm-modal)
-- 🎮 [Live Demo - CodeSandbox](https://codesandbox.io/p/sandbox/epic-lumiere-ky2ggy)
+- 🎮 [Live Demo - CodeSandbox](https://codesandbox.io/p/sandbox/simple-confirm-modal-ky2ggy)
 
 ## Browser Support
 
